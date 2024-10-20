@@ -14,7 +14,7 @@ EXEMPLE = "Arguments missing use this example : chat [USERNAME]"
 
 
 
-def mymodule(chat_url_="192.168.4.9", chat_port_=1030,username=""):
+def mymodule(chat_url_="chat.eletrix.fr", chat_port_=80,username=""):
     skc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     skc.connect((chat_url_, chat_port_))
     def receive_messages():
